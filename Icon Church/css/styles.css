@@ -1,0 +1,320 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+}
+/* Headings */
+h1, h2, p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+
+}
+
+p{
+  font-size: 16px;
+}
+
+/* headings */
+
+.big-heading{
+  font-size: 3.5rem;
+  color: #D4E3E8;
+  line-height: 1.5;
+}
+
+.section-heading{
+  font-size: 3rem;
+  color: #1C2933;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* Containers */
+.container-fluid{
+  padding: 7% 15%;
+}
+
+/* Sections */
+.colored-section{
+  background-color: #617052;
+  color: #F0EDEB;
+}
+
+.light-section{
+  background-color: #F0EDEB;
+}
+
+/* Nav bar */
+.navbar{
+  padding: 0 0 4.5rem;
+}
+
+/* Buttons */
+.btn{
+  margin: 5% 2% 5% 0;
+  border-radius: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* Connect Buttons */
+.connect-button{
+  background-color: #D9381F;
+  color: #F0EDEB;
+}
+
+.connect-button:hover{
+  background-color: #617052;
+  color:#F0EDEB;
+}
+
+.service-button{
+  background-color: #F0EDEB;
+  color: #D9381F;
+}
+
+
+                      /* header section */
+.header-image{
+  /* position: absolute; */
+  width: 100%;
+  text-align: center;
+  /* z-index: 1; */
+
+}
+.blue-rectangle{
+  background-color: #1C2933;
+  left:40%;
+  top: 70%;
+  position: absolute;
+  padding: 5% 40% 5% 5%;
+  color: #F0EDEB;
+  z-index: 1;
+}
+
+.header-bundle{
+  position:relative;
+  margin-bottom: 20%;
+
+}
+
+.small-header{
+
+  margin-bottom: 10%;
+}
+
+
+.dots-header{
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  left: 45%;
+}
+
+                      /* Sundays section */
+#sundays{
+  position: relative;
+  z-index:0;
+}
+
+
+.underlay{
+  position: relative;
+  margin-bottom: 100px;
+  z-index: 0;
+}
+
+/*
+.sunday-image{
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.pattern{
+  width: 70px;
+  position: absolute;
+  z-index: 3;
+  left: 5%;
+  top: 70%;
+} */
+
+.sunday-image{
+  width:500px;
+  position: absolute;
+}
+
+.pattern{
+  width:70px;
+  position: absolute;
+  top: 400px;
+  margin-bottom: 40px;
+}
+
+.sundays-buttons{
+  margin-top: 50px;
+}
+
+.sundays-time{
+  padding-top: 30%;
+  padding-bottom: 20px;
+}
+
+
+
+
+
+                      /* People section */
+
+.about-people{
+  padding: 2%;
+  font-size: 3.5rem;
+}
+
+.about-people .section-heading{
+  color:#617052;
+  margin-bottom: 5px;
+}
+
+.about-buttons{
+  padding: 3%;
+  margin-top:5px;
+  margin-bottom: 5px;
+}
+
+.people-image{
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+.dots-image{
+  /* width: 2000px; */
+  width: 100%;
+  height: auto;
+  margin-bottom:3%;
+}
+
+.dots-footer{
+  text-align: center;
+}
+
+                      /* footer section */
+
+
+
+footer.colored-section{
+  background-color: #1C2933;
+  color: #FFFFFF;
+}
+
+
+.fineprint{
+  font-size: 12px;
+}
+
+.footer-logo{
+  width: 70%;
+  padding: 2%
+}
+
+.all-links{
+  padding-bottom: 3%;
+}
+
+.list-unstyled{
+  padding-top: 20%;
+}
+
+.list-unstyled a{
+  color: #FFFFFF;
+
+}
+.chevron{
+  text-align: right;
+}
+.chevron-image{
+  margin-bottom: 1rem;
+  width: 30px;
+}
+
+
+/* on Phones */
+@media (max-width: 600px) {
+  #footer{
+    text-align: center;
+  }
+
+  .btn{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .small-header .btn{
+    margin-left:5px;
+  }
+
+  .list-unstyled{
+    padding-top: 2%;
+  }
+
+}
+
+/* on Tablet and Phones */
+@media(max-width: 768px){
+
+  .small-header{
+    margin-top: 55%;
+    padding-top: 10%;
+  }
+
+.sundays-time{
+  margin-top: 300px;
+  margin-left:100px;
+}
+
+  .last-pic{
+    display: none;
+  }
+
+  .about-buttons{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  #people .container-fluid {display: flex; flex-flow: column;}
+  .about-people {order:1;}
+  .members-row {order:2;}
+  .about-buttons{order:3;}
+
+}
+
+
+/* on Desktop, Tablet and Phones */
+@media (max-width: 1024px) {
+  .small-header{
+    margin-top: 40%;
+  }
+
+  .dots-footer{
+    display:block;
+  }
+
+}
+
+/* on larger desktop */
+@media (max-width: 2680px) {
+  .dots-header{
+    left: 50%;
+  }
+
+  .sunday-image{
+    right: 10%;
+  }
+
+  .dots-image{
+    width: 1024px;
+
+  }
+
+}
