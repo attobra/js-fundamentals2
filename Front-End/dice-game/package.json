@@ -1,0 +1,11 @@
+{
+  "name": "dice-game",
+  "version": "1.0.0",
+  "description": "This will load a dice game site",
+  "scripts": {
+    "start": "harp server --port $PORT"
+  },
+  "dependencies": {
+    "harp": "*"
+  }
+}
