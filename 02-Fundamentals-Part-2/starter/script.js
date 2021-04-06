@@ -78,6 +78,8 @@ console.log(nora.calcAge());
 console.log(nora.paragraph());
 */
 
+/*
+/////////coding challenge #3
 const mark = {
   fullName: "Mark Miller",
   weight: 78,
@@ -108,3 +110,43 @@ if (mark.calcBMI() > john.calcBMI()) {
     `${john.fullName}'s BMI (${john.valueBMI}) is higher than ${mark.fullName}'s BMI (${mark.valueBMI})`
   );
 }
+*/
+
+// for (let rep = 1; rep <= 5; rep++) {
+//   console.log(`Lifting weights repetition ${rep} 🏋🏻‍♂️ `);
+//   for (let exercise = 1; exercise < 3; exercise++) {
+//     console.log(`-------starting escercise ${exercise}`);
+//   }
+// }
+
+// let i = 1;
+// let dice = Math.trunc(Math.random() * 6)+1;
+// console.log(dice);
+// while ((dice !== 6)) {
+//   console.log(`you rolled a ${dice}. `);
+//   dice = Math.trunc(Math.random() * 6)+1
+//   if (dice ===6) console.log('Loop is about to end...')
+// }
+
+
+/////coding challenge 
+const bills =[22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+let tips = []
+let totals = []
+const calcTip = function(bill){
+  return bill >=50 && bill <=300 ? bill*1.15 : bill*1.2
+}
+const calcAvg = function(arr){
+  let sum=0
+  for (let i = 0; i <arr.length; i++){
+    sum += arr[i]
+  }
+  return sum/arr.length
+}
+for (let i = 0; i < bills.length; i++){
+  totals.push(calcTip(bills[i]))
+}
+
+console.log(totals)
+console.log(calcAvg(totals))
+
