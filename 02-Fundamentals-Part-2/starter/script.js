@@ -1,5 +1,5 @@
 "use strict";
-
+/*
 const calcAverage = function (score1, score2, score3) {
   return (score1 + score2 + score3) / 3;
 };
@@ -40,3 +40,71 @@ const calcTip = function (bill) {
 const bills = [125, 555, 44];
 const totals = bills.map((bill) => calcTip(bill));
 console.log(totals);
+*/
+
+//other example
+/*
+const nora = {
+  firstName: "Nora",
+  lastName: "Attobra",
+  birthYear: 1987,
+  job: "Front-end developer",
+  family: ["Habib", "Keon", "lejla", "the babies"],
+  hasDriverLicense: false,
+
+  calcAge: function () {
+    this.age = 2021 - this.birthYear;
+    return this.age;
+  },
+  paragraph: function () {
+    return `${this.firstName}  is a ${this.calcAge()} years old ${
+      this.job
+    } and she has ${this.hasDriverLicense ? "a" : "no"} driver license.`;
+  },
+};
+
+console.log(nora.calcAge());
+
+// const interestedIn = prompt(
+//   "what do you want to know about Nora? choose firstName, lastName, age, job or family"
+// );
+
+// if (nora[interestedIn]) {
+//   console.log(`This is what you can learn about nora: ${nora[interestedIn]}`);
+// } else {
+//   console.log("wrong entry");
+// }
+
+console.log(nora.paragraph());
+*/
+
+const mark = {
+  fullName: "Mark Miller",
+  weight: 78,
+  height: 1.69,
+  calcBMI: function () {
+    this.valueBMI = this.weight / this.height ** 2;
+    return this.valueBMI;
+  },
+};
+
+console.log(mark.valueBMI);
+const john = {
+  fullName: "John Smith",
+  weight: 92,
+  height: 1.95,
+  calcBMI: function () {
+    this.valueBMI = this.weight / this.height ** 2;
+    return this.valueBMI;
+  },
+};
+
+if (mark.calcBMI() > john.calcBMI()) {
+  console.log(
+    `${mark.fullName}'s BMI (${mark.valueBMI}) is higher than ${john.fullName}'s BMI (${john.valueBMI})`
+  );
+} else {
+  console.log(
+    `${john.fullName}'s BMI (${john.valueBMI}) is higher than ${mark.fullName}'s BMI (${mark.valueBMI})`
+  );
+}
