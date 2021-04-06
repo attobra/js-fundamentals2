@@ -21,3 +21,22 @@ checkWinner(dolphinsScore, koalasScore);
 koalasScore = calcAverage(11, 230, 111);
 dolphinsScore = calcAverage(43, 0, 45);
 checkWinner(dolphinsScore, koalasScore);
+
+//exercise
+const calcAge = function (birthYear) {
+  return 2022 - birthYear;
+};
+
+const years = [1987, 2008, 2012, 2014, 2016, 2018];
+
+console.log(calcAge(years[years.length - 1]));
+console.log(years.map((year) => calcAge(year)));
+
+//coding #2
+const calcTip = function (bill) {
+  return bill >= 50 && bill < 300 ? bill * 1.15 : bill * 1.2;
+};
+
+const bills = [125, 555, 44];
+const totals = bills.map((bill) => calcTip(bill));
+console.log(totals);
